@@ -1,1 +1,2 @@
-# website23_test
+# TEDxIITGuwahati
+Official website for TEDxIITGuwahati.
