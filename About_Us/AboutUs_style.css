@@ -103,6 +103,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    height: 93%;
+    overflow-y: auto;
 }
 
 .leftTabs
@@ -129,7 +131,7 @@
 
 #closeMenu
 {
-    margin:auto 200px;
+    margin-left:200px;
     margin-bottom: 50px;
     cursor: pointer;
     width: 20px;
@@ -235,17 +237,22 @@
 
 #myDropdownEvents
 {
-    width: 220px;
+    width: 185px;
     position: absolute;
     top: 70%;
-    right: 25%;
+    right: 27%;
     z-index: 1;
 }
 
 .eventDropTabs
 {
-    margin: 12px auto;
+    margin: 8px;
     display: flex;
+}
+
+.eventDropTabs a
+{
+    padding: 7px;
 }
 
 .upcomingTab

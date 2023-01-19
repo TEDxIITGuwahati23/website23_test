@@ -83,6 +83,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    height: 93%;
+    overflow-y: auto;
 }
 
 .leftTabs{
@@ -104,7 +106,7 @@
 }
 
 #closeMenu{
-    margin:auto 200px;
+    margin-left:200px;
     margin-bottom: 50px;
     cursor: pointer;
     width: 20px;
@@ -193,17 +195,22 @@
 
 #myDropdownEvents
 {
-    width: 220px;
+    width: 185px;
     position: absolute;
     top: 70%;
-    right: 25%;
+    right: 27%;
     z-index: 1;
 }
 
 .eventDropTabs
 {
-    margin: 12px auto;
+    margin: 8px;
     display: flex;
+}
+
+.eventDropTabs a
+{
+    padding: 7px;
 }
 
 .upcomingTab
@@ -413,6 +420,15 @@ h3{
     /* height: 200px;   */
     display: -webkit-box !important;
     -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+#card-ten p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     white-space: normal;
 }
@@ -672,7 +688,6 @@ button{
 
 .mycard {
     background-color: rgb(42, 41, 41);
-    border-top: 6px solid rgb(230, 43, 30);
     color: white;
     overflow: hidden;
     box-shadow: rgba(61, 61, 61, 0.1) 0px 25px 20px 0px;
@@ -682,9 +697,18 @@ button{
     height: fit-content;
     width: 350px;
     text-align: center;
+    margin-top: -2vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
+    overflow: hidden;
 }
+.recent{
+    margin-top: 0px;
 
+}
 .my_btn {
+    display: inline-block;
+    width: 50%;
     background-color: orangered;
     color: white;
     padding: 8px;
@@ -692,6 +716,7 @@ button{
     border-radius: 20px;
     margin-top: 10px;
     text-decoration: none;
+    text-align: center;
     transition: background-color, color 0.2s ease;
 }
 
@@ -730,8 +755,10 @@ button{
 }
 
 .my_btn_cont{
+    width: 60%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0%;
     margin-top: -8px;
     gap: 8px;
@@ -758,7 +785,9 @@ button{
 .underline_about{
     color: #FF2B06;
 }
-
+.cont p{
+    width: 54vw;
+}
 @media only screen and (max-width: 990px) {
     .block{
         font-weight: 700;
@@ -774,8 +803,12 @@ button{
         font-size: 180%;
     }
     .nominateBtn{
-        font-size: 13px;
+        font-size: 14px;
         max-block-size: 15px;
+    }
+    .card{
+        position: relative;
+        top: -2vw;
     }
 }
 
@@ -800,7 +833,11 @@ button{
     }
     
 }
-
+@media only screen and (max-width: 750px) {
+    .cont p{
+        width: 90%;
+    }
+}
 @media only screen and (max-width: 500px) {
     .block{
         font-weight: 700;
@@ -817,6 +854,12 @@ button{
     .mycard{
         width: 300px;
     }
+    .cont p{
+        width: 90%;
+    }
+    /* .mycard p{
+        line-height: 300px;
+    } */
 }
 
 @media only screen and (max-width: 440px) {
@@ -863,6 +906,9 @@ button{
     .mycard{
         width: 250px;
     }
+    .cont p{
+        width: 90%;
+    }
 }
 
 
@@ -875,10 +921,10 @@ button{
         font-weight: 500;
         font-size: 80%;
     }
-    .nominateBtn{
+    /* .nominateBtn{
         font-size: 9px;
         max-block-size: 4px;
-    }
+    } */
     .card-content{
         width: 215px;
         border-radius: 8px;
@@ -893,6 +939,9 @@ button{
     }
     #card1{
         margin-left: -10px;
+    }
+    .cont p{
+        width: 90%;
     }
 }
 
